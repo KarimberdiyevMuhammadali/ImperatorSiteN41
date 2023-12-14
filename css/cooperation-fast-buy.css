@@ -1,4 +1,205 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+nav .navbar__bottom #navbar-responsive {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: -100%;
+  height: 100vh;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgb(143, 142, 122);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#loader {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: white;
+  opacity: 0.8;
+  -webkit-transition: 2s;
+  transition: 2s;
+  z-index: 10000;
+}
+
+#loader.loading-none {
+  z-index: -10000;
+  opacity: 0;
+}
+
+.loader {
+  width: 150px;
+  height: 150px;
+  border-left: 5px solid #38ff8e;
+  border-radius: 50%;
+  -webkit-animation: right5231 0.9s linear infinite;
+          animation: right5231 0.9s linear infinite;
+}
+
+.loader::before,
+.loader::after {
+  content: "";
+  width: 120px;
+  height: 120px;
+  display: block;
+  position: absolute;
+  top: calc(50% - 60px);
+  left: calc(50% - 60px);
+  border-right: 5px solid #ffbe0b;
+  border-radius: 50%;
+  -webkit-animation: left036 0.9s linear infinite;
+          animation: left036 0.9s linear infinite;
+}
+
+.loader::after {
+  width: 90px;
+  height: 90px;
+  top: calc(50% - 45px);
+  left: calc(50% - 45px);
+  border: 0;
+  border-top: 5px solid #ff086e;
+  -webkit-animation: none;
+          animation: none;
+}
+
+@-webkit-keyframes ldio-xf8i52ldli8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes ldio-xf8i52ldli8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.ldio-xf8i52ldli8 div {
+  position: absolute;
+  -webkit-animation: ldio-xf8i52ldli8 2.14s linear infinite;
+          animation: ldio-xf8i52ldli8 2.14s linear infinite;
+  width: 169.26px;
+  height: 169.26px;
+  top: 23.87px;
+  left: 23.87px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 6.076px 0 0 #e1815b;
+          box-shadow: 0 6.076px 0 0 #e1815b;
+  -webkit-transform-origin: 84.63px 87.668px;
+          transform-origin: 84.63px 87.668px;
+}
+
+.loadingio-spinner-eclipse-c7kl3vc0v8r {
+  width: 217px;
+  height: 217px;
+  display: inline-block;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.ldio-xf8i52ldli8 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  -webkit-transform: translateZ(0) scale(1);
+          transform: translateZ(0) scale(1);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  /* see note above */
+}
+
+.ldio-xf8i52ldli8 div {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#navbar {
+  height: 80px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#navbar.navbar-shrink {
+  height: 60px;
+}
+
+#navbar2 {
+  height: 50px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#navbar2.navbar2-shrink {
+  height: 30px;
+}
+
+#backtop {
+  position: fixed;
+  bottom: -60px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: orange;
+  color: white;
+  cursor: pointer;
+  padding: 15px 10px;
+  border-radius: 4px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#backtop.backtop-show {
+  bottom: 30px;
+}
+
 input {
   border: 1px solid grey;
   width: 555px;
