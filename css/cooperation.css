@@ -1,4 +1,42 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+#backtop {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  bottom: -110px;
+  right: 25px;
+  width: 50px;
+  height: 50px;
+  z-index: -1;
+  -webkit-animation: infinite 4s;
+          animation: infinite 4s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  align-items: center;
+}
+#backtop img {
+  width: 60px;
+  height: 60px;
+}
+
+#backtop.backtop-show {
+  bottom: 25px;
+  z-index: 10;
+}
+
 .container {
   width: 100vw;
   padding-right: 20px;
