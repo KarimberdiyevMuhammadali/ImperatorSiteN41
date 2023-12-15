@@ -113,15 +113,56 @@ html {
 .card__product-desc img {
   margin-bottom: 12px;
 }
+.card__product-desc p {
+  color: #000;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 22.4px */
+  letter-spacing: 0.25px;
+}
+
 .card__data {
   margin-top: 43px;
   margin-bottom: 34px;
 }
 
-.card__product-btn button {
+.card-btn {
   margin-top: 28px;
   margin-bottom: 32px;
+  margin-left: 880px;
+  padding: 18px 110px;
 }
-.card__product-btn button a {
-  padding: 18px 11px;
+.card-btn a {
+  color: var(--Black, #0D0D0D);
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; /* 19.6px */
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+}
+
+.regist__product {
+  margin-bottom: 68px;
+}
+.regist__product span {
+  max-width: 1146px;
+  height: 48px;
+  flex-shrink: 0;
+  display: block;
+  margin-left: 100px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  color: #FFF;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 160%; /* 22.4px */
+  letter-spacing: 0.25px;
 }
