@@ -1,13 +1,510 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/tailwind.css">
-    <link rel="stylesheet" href="./css/style.min.css">
-    <title>Home || Asilbek </title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <title>Home || Asilbek</title>
+  </head>
+  <body class="bg-gray-200">
+    <div id="loading">
+      <div class="loadingio-spinner-dual-ring-rooabvpo2t">
+        <div class="ldio-82s6ihcfinc">
+          <div></div>
+          <div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#" id="backtop">
+      <img src="./image-index/backtop.svg" alt="svg" />
+    </a>
+    <nav class="fixed top-0 w-full z-10">
+      <div>
+        <div
+          id="navbar2"
+          class="navbar__top hidden lg:flex items-center bg-black"
+        >
+          <div class="container mx-auto px-5">
+            <a href="#" class="text-white text-xs font-bold"
+              >RU<a href="#" class="text-gray-700 ml-2 text-xs font-bold"
+                >UZB</a
+              ></a
+            >
+          </div>
+        </div>
+        <div class="navbar__bottom bg-white shadow-md">
+          <div id="navbar" class="container px-5 mx-auto flex justify-between">
+            <div class="navbar__bottom--left flex items-center gap-4 lg:gap-11">
+              <!----------------------------Navbar Response------------------------------>
+              <div id="navbar-responsive" class="flex relative lg:hidden">
+                <button
+                  id="navbar-close"
+                  class="absolute top-5 right-7 py-5 px-3 bg-orange-500 rounded-md"
+                >
+                  <img
+                    src="./image-index/close.svg"
+                    class="hover:scale-125 transform"
+                    alt="close"
+                  />
+                </button>
+                <ul class="flex-col max-w-md w-full px-5">
+                  <li class="mt-10 text-center">
+                    <a
+                      class="p-5 bg-gray-500 transition rounded w-full inline-block font-medium text-sm hover:text-gray-500 hover:bg-white hover:scale-x-125"
+                      href="./pages/"
+                      >Главная</a
+                    >
+                  </li>
+                  <li class="mt-10 text-center">
+                    <a
+                      class="p-5 bg-gray-500 transition rounded w-full inline-block font-medium text-sm hover:text-gray-500 hover:bg-white hover:scale-x-125"
+                      href="#"
+                      >О нас</a
+                    >
+                  </li>
+                  <li class="mt-10 text-center">
+                    <a
+                      class="p-5 bg-gray-500 transition rounded w-full inline-block font-medium text-sm hover:text-gray-500 hover:bg-white hover:scale-x-125"
+                      href="#"
+                      >Категории</a
+                    >
+                  </li>
+                  <li class="mt-10 text-center">
+                    <a
+                      class="p-5 bg-gray-500 transition rounded w-full inline-block font-medium text-sm hover:text-gray-500 hover:bg-white hover:scale-x-125"
+                      href="#"
+                      >Сотрудничество</a
+                    >
+                  </li>
+                </ul>
+                <button
+                  class="mt-10 max-w-md w-full py-3 rounded bg-gray-100 hover:bg-gray-50 hover:text-gray-400"
+                  type="submit"
+                >
+                  Войти
+                </button>
+                <button
+                  class="mt-10 max-w-md w-full py-3 rounded nav__btn--2 bg-amber-400 hover:bg-amber-50 hover:text-amber-400 hover:border-amber-400"
+                  type="submit"
+                >
+                  Зарегистрироваться
+                </button>
+              </div>
+              <button id="navbar-open" class="lg:hidden">
+                <img
+                  src="./image-index/menu.svg"
+                  class="lg:hidden"
+                  alt="menu"
+                />
+              </button>
+              <!----------------------------/Navbar Response------------------------------>
+              <a href="./index.html" class="lg:flex lg:items-center lg:mr-7">
+                <span class="text-2xl font-bold hidden lg:inline-block"
+                  >MILANDI</span
+                >
+                <img
+                  src="./image-index/pro-imperia.svg"
+                  class="inline-block lg:hidden"
+                  width="46px"
+                  alt="svg"
+                />
+              </a>
+              <ul class="hidden lg:flex lg:ml-7">
+                <li>
+                  <a
+                    class="p-5 font-medium text-sm hover:text-gray-500"
+                    href="./pages/"
+                    >Главная</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="p-5 font-medium text-sm hover:text-gray-500"
+                    href="#"
+                    >О нас</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="p-5 font-medium text-sm hover:text-gray-500"
+                    href="#"
+                    >Категории</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="p-5 font-medium text-sm hover:text-gray-500"
+                    href="#"
+                    >Сотрудничество</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="navbar__bottom--right flex items-center">
+              <button
+                class="hidden lg:inline-block px-2 py-1 rounded bg-gray-100 hover:bg-gray-50 hover:text-gray-400"
+                type="submit"
+              >
+                Войти
+              </button>
+              <button
+                class="hidden lg:inline-block ml-5 px-2 py-1 rounded nav__btn--2 bg-amber-400 hover:bg-amber-50 hover:text-amber-400 hover:border-amber-400"
+                type="submit"
+              >
+                Зарегистрироваться
+              </button>
+              <a class="ml-10" href="#">
+                <img
+                  class="transition-all hover:rotate-719"
+                  src="./image-index/korzinka.svg"
+                  alt=" k svg"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main class="">
+      <section id="hero" class="pt-40">
+        <div
+          class="container px-5 mx-auto md:flex xl:gap-96 md:justify-between md:items-center"
+        >
+          <div class="hidden md:block">
+            <h1 class="text-white text-4xl mb-4 max-w-xl">
+              Быстрый и удобный шоппинг, не выходя из дома.
+            </h1>
+            <p class="text-white mb-6 max-w-xl">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Convallis
+              lectus odio vitae, duis nec ut velit, fermentum. Diam sollicitudin
+              arcu euismod morbi. Adipiscing bibendum elementum, fermentum amet
+              quis erat.
+            </p>
+            <a href="#" class="flex gap-1 uppercase text-yellow-500">
+              <img src="./image-index/play-yellow.svg" alt="" />
+              Все товары
+            </a>
+          </div>
+          <div class="flex justifyend px-5">
+            <img class="max-w-2xl w-full" src="./image-index/hero.svg" alt="" />
+          </div>
+        </div>
+      </section>
+      <section id="service" class="pb-4">
+        <div class="container mx-auto px-5 pt-4">
+          <div class="md:hidden">
+            <h1 class="text-black text-3xl font-semibold mb-4 max-w-xl">
+              Быстрый и удобный шоппинг, не выходя из дома.
+            </h1>
+            <p class="text-black mb-6 max-w-xl">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Convallis
+              lectus odio vitae, duis nec ut velit, fermentum. Diam sollicitudin
+              arcu euismod morbi. Adipiscing bibendum elementum, fermentum amet
+              quis erat.
+            </p>
+            <a href="#" class="flex gap-1 uppercase text-black">
+              <img src="./image-index/play-black.svg" alt="" />
+              Все товары
+            </a>
+          </div>
+          <h1
+            class="text-3xl sm:text-4xl mt-12 max-w-xs lg:text-center lg:max-w-full w-full font-bold"
+          >
+            Наши преимущества
+          </h1>
+        </div>
+      </section>
+      <section id="carousel" class="bg-white lg:bg-gray-200 py-9">
+        <div class="container mx-auto px-5">
+          <div class="owl-carousel owl-theme">
+            <div class="item px-16 py-8 lg:bg-white lg:rounded-md">
+              <img class="" src="./image-index/preim-svg-1.svg" alt="" />
+              <h1 class="mt-11 text-center">Лучший сервис</h1>
+            </div>
+            <div class="item px-16 py-8 lg:bg-white lg:rounded-md">
+              <img src="./image-index/priem-svg-2.svg" alt="" />
+              <h1 class="mt-11 text-center">Экспресс доставка</h1>
+            </div>
+            <div class="item px-16 py-8 lg:bg-white lg:rounded-md">
+              <img src="./image-index/priem-svg-3.svg" alt="" />
+              <h1 class="mt-11 text-center">Лучшее качество в стране</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="good__tovars" class="pt-20">
+        <div class="container mx-auto px-5">
+          <h1 class="font-bold text-4xl text-center mb-8"> Лучшие товары</h1>
+          <div class="grid sm:grid-cols-2 justify-between items-center xl:grid-cols-4">
+            <div class="w-64 bg-white rounded-xl">
+              <img width="100%" src="./image-index/good-tovar-1.png" alt="" />
+              <h1 class="p-3 font-semibold uppercase text-xl mb-2">Lorem ipsum dolor sit amet</h1>
+              <p class="p-3 mb-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit sed
+                odio sed nascetur.
+              </p>
+              <div class="p-3 flex justify-between">
+                <img src="./image-index/stars.png" alt="">
+                <span class="font-bold">855 у.е.</span>
+              </div>
+              <button class="mb-3 mx-3 py-2 px-11 bg-amber-400 rounded uppercase font-semibold" type="reset">Добавить в корзину</button>
+            </div>
+            <div class="w-64 mt-6 xl:mt-0 bg-white rounded-xl">
+              <img width="100%" src="./image-index/good-tovar-2.png" alt="" />
+              <h1 class="p-3 font-semibold uppercase text-xl mb-2">Lorem ipsum dolor sit amet</h1>
+              <p class="p-3 mb-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit sed
+                odio sed nascetur.
+              </p>
+              <div class="p-3 flex justify-between">
+                <img src="./image-index/stars.png" alt="">
+                <span class="font-bold">855 у.е.</span>
+              </div>
+              <button class="mb-3 mx-3 py-2 px-11 bg-amber-400 rounded uppercase font-semibold" type="reset">Добавить в корзину</button>
+            </div>
+            <div class="w-64 mt-6 xl:mt-0 bg-white rounded-xl">
+              <img width="100%" src="./image-index/good-tovar-3.png" alt="" />
+              <h1 class="p-3 font-semibold uppercase text-xl mb-2">Lorem ipsum dolor sit amet</h1>
+              <p class="p-3 mb-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit sed
+                odio sed nascetur.
+              </p>
+              <div class="p-3 flex justify-between">
+                <img src="./image-index/stars.png" alt="">
+                <span class="font-bold">855 у.е.</span>
+              </div>
+              <button class="mb-3 mx-3 py-2 px-11 bg-amber-400 rounded uppercase font-semibold" type="reset">Добавить в корзину</button>
+            </div>
+            <div class="w-64 mt-6 xl:mt-0 bg-white rounded-xl">
+              <img width="100%" src="./image-index/good-tovar-4.png" alt="" />
+              <h1 class="p-3 font-semibold uppercase text-xl mb-2">Lorem ipsum dolor sit amet</h1>
+              <p class="p-3 mb-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit sed
+                odio sed nascetur.
+              </p>
+              <div class="p-3 flex justify-between">
+                <img src="./image-index/stars.png" alt="">
+                <span class="font-bold">855 у.е.</span>
+              </div>
+              <button class="mb-3 mx-3 py-2 px-11 bg-amber-400 rounded uppercase font-semibold" type="reset">Добавить в корзину</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="category" class="pt-28">
+        <div class="container mx-auto px-5">
+          <h1 class="font-bold text-4xl text-center mb-8">Категории</h1>
+          <div class="grid sm:grid-cols-2 justify-between items-center xl:grid-cols-4">
+            <div class="w-64 bg-white rounded-xl">
+              <img width="100%" src="./image-index/kategoryy-1.png" alt="" />
+            </div>
+            <div class="w-64 mt-6 xl:mt-0 bg-white rounded-xl">
+              <img width="100%" src="./image-index/kategory-2.png" alt="" />
+            </div>
+            <div class="w-64 mt-6 xl:mt-0 bg-white rounded-xl">
+              <img width="100%" src="./image-index/kategory-3.png" alt="" />
+            </div>
+            <div class="w-64 mt-6 xl:mt-0 bg-white rounded-xl">
+              <img width="100%" src="./image-index/kategory-4.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id=""></section>
+    </main>
+    <footer id="footer" class="mt-20 py-12 bg-white">
+      <div class="container mx-auto p-5 hidden md:flex justify-between">
+        <div>
+          <h1 class="text-sm font-semibold uppercase mb-4">про imperia</h1>
+          <p class="text-sm font-normal mb-4 w-60">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget
+            pretium aenean dignissim sit cursus dictumst adipiscing nunc.
+          </p>
+          <a class="" href="./index.html">
+            <img src="./image-index/pro-imperia.svg" alt="svg" />
+          </a>
+        </div>
+        <div class="">
+          <div>
+            <h1 class="text-sm font-semibold uppercase mb-4">контакты</h1>
+            <ul>
+              <li class="mb-3">
+                <a class="text-sm font-normal" href="#">+998 90 958 78 87</a>
+              </li>
+              <li class="">
+                <a class="text-sm font-normal" href="./https//support@fonon.uz"
+                  >support@fonon.uz</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="mt-14">
+            <h1 class="text-sm font-semibold uppercase mb-4">рабочее время</h1>
+            <ul>
+              <li class="mb-3">
+                <a class="text-sm font-normal capitalize" href="#"
+                  >По будням 9:00 to 18:00</a
+                >
+              </li>
+              <li class="">
+                <a class="text-sm font-normal capitalize" href="#"
+                  >В выходные 11:00 to 18:00</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="">
+          <h1 class="text-sm font-semibold mb-4 uppercase">Меню</h1>
+          <ul>
+            <li class="mb-3">
+              <a class="text-sm font-normal mb-3" href="#">Главная</a>
+            </li>
+            <li class="mb-3">
+              <a class="text-sm font-normal" href="./https//support@fonon.uz"
+                >О нас</a
+              >
+            </li>
+            <li class="mb-3">
+              <a class="text-sm font-normal" href="./https//support@fonon.uz"
+                >Категории</a
+              >
+            </li>
+            <li class="">
+              <a class="text-sm font-normal" href="./https//support@fonon.uz"
+                >Сотрудничество</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="">
+          <h1 class="text-sm font-semibold uppercase mb-4">категории</h1>
+          <ul>
+            <li class="mb-3">
+              <a class="text-sm font-normal capitalize" href="#"
+                >Женская одежда</a
+              >
+            </li>
+            <li class="mb-3">
+              <a
+                class="text-sm font-normal capitalize"
+                href="./https//support@fonon.uz"
+                >Мужская одежда</a
+              >
+            </li>
+            <li class="mb-3">
+              <a
+                class="text-sm font-normal capitalize"
+                href="./https//support@fonon.uz"
+                >Детская одежда</a
+              >
+            </li>
+            <li class="mb-3">
+              <a
+                class="text-sm font-normal capitalize"
+                href="./https//support@fonon.uz"
+                >Обувь</a
+              >
+            </li>
+            <li class="mb-3">
+              <a
+                class="text-sm font-normal capitalize"
+                href="./https//support@fonon.uz"
+                >Сумки</a
+              >
+            </li>
+            <li class="">
+              <a
+                class="text-sm font-normal capitalize"
+                href="./https//support@fonon.uz"
+                >Аксесуары</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container mx-auto px-5 md:hidden">
+        <h1 class="mb-10 max-w-xs mx-auto">
+          High fidelity wireframes include more real content, specific
+          typography choices, and information on image.
+        </h1>
+        <div class="flex justify-between max-w-xs mx-auto">
+          <ul class="pb-9">
+            <li class="mb-3">
+              <a class="text-xl font-semibold" href="#">Catalog</a>
+            </li>
+            <li class="mb-3">
+              <a class="text-xl font-semibold" href="#">Popular</a>
+            </li>
+            <li class="mb-3">
+              <a class="text-xl font-semibold" href="#">Pricing</a>
+            </li>
+            <li>
+              <a class="text-xl font-semibold" href="#">Features</a>
+            </li>
+          </ul>
+          <ul>
+            <li class="mb-4">
+              <a class="text-xl font-semibold" href="#">About</a>
+            </li>
+            <li class="mb-4">
+              <a class="text-xl font-semibold" href="#">Blog</a>
+            </li>
+            <li>
+              <a class="text-xl font-semibold" href="#">Contacts</a>
+            </li>
+          </ul>
+        </div>
+        <hr />
+        <div class="mt-10 max-w-xs mx-auto">
+          <div class="flex items-center mb-4 gap-4">
+            <a href="#">
+              <img src="./image-index/location.svg" alt="svg" />
+            </a>
+            <p class="">
+              Los Angeles,<br />
+              359 Hidden Valley Road
+            </p>
+          </div>
+          <div class="flex gap-4">
+            <a href="#">
+              <img src="./image-index/mail.svg" alt="svg" />
+            </a>
+            <a href="#">Hellohero@gmail.com</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+      integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="./js/main.js"></script>
-</body>
+  </body>
 </html>
